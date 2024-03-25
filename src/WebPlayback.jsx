@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+
+
 const track = {
     name: "",
     album: {
@@ -89,6 +91,7 @@ function WebPlayback(props) {
                             <button className="btn-spotify" onClick={() => { player.previousTrack() }} >
                                 &lt;&lt;
                             </button>
+
 
                             <button className="btn-spotify" onClick={() => { player.togglePlay() }} >
                                 { is_paused ? "PLAY" : "PAUSE" }
